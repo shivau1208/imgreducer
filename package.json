@@ -1,0 +1,24 @@
+{
+  "name": "imagereducer",
+  "version": "1.0.0",
+  "description": "A react hook to reduce image size and convert to other format like png, jpeg, webp, avif, bmp;",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reducer",
+    "imgreducer",
+    "resizer"
+  ],
+  "author": "Shivaraj Umadi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivau1208/imgreducer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shivau1208/imgreducer/issues"
+  },
+  "homepage": "https://github.com/shivau1208/imgreducer#readme"
+}
