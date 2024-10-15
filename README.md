@@ -10,7 +10,7 @@ useImgReducer is a custom React hook designed to reduce the size of an image by 
 ## Example
 ```jsx 
 import React from 'react';
-import useImgReducer from 'imgreducer';
+import useImgReducer from "imgreducer";
 
 function ImageComponent() {
   const { src } = useImgReducer('https://example.com/sample.jpg', 'webp', 0.5);
