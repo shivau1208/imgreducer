@@ -1,8 +1,9 @@
 import React, { useState,useEffect } from 'react';
 
-export default function useImgReducer(url,imageType='avif',scale = 1) {
+export default function useImgReducer(url,imageType='webp',scale = 1) {
   const [src,setSrc] = useState(null);
   const [error,setError] = useState(null);
+  const [loading,setLoading] = useState(true);
   useEffect(()=>{
     if(scale <= 0 || !url) return;
     const fetchImage = async ()=>{
@@ -35,6 +36,7 @@ export default function useImgReducer(url,imageType='avif',scale = 1) {
             canvas.toBlob(function(imgBlob) {
               const webpUrl = URL.createObjectURL(imgBlob);
               setSrc(webpUrl);
+              setLoading(false);
         
             }, `image/${imageType}`);
             // Convert the canvas content to WebP
@@ -49,5 +51,5 @@ export default function useImgReducer(url,imageType='avif',scale = 1) {
     fetchImage();
     return ()=>setSrc(null);
   },[url,imageType,scale])
-  return { src ,error }
+  return { src, loading, error }
 }

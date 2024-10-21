@@ -1,6 +1,6 @@
 {
   "name": "imgreducer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A react hook to reduce image size and convert to other format like png, jpeg, webp, avif, bmp;",
   "main": "index.js",
   "scripts": {

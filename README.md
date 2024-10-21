@@ -13,9 +13,12 @@ import React from 'react';
 import useImgReducer from "imgreducer";
 
 function ImageComponent() {
-  const { src, error } = useImgReducer('https://example.com/sample.jpg', 'webp', 0.5);
+  const { src, loading, error } = useImgReducer('https://example.com/sample.jpg', 'webp', 0.5);
   if(error){
     return <p>failed to load image</p>
+  }
+  if(loading){
+    return <p>Loading...</p>
   }
   return (
     <div>
