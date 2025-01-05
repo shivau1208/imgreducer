@@ -11,6 +11,9 @@
     "imgreducer",
     "image optimization"
   ],
+  "scripts":{
+    "test":"jest",
+  }
   "author": "Shivaraj Umadi",
   "license": "MIT",
   "repository": {
