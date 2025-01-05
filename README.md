@@ -22,12 +22,9 @@ function ImageComponent() {
   if(error){
     return <p>failed to load image</p>
   }
-  if(loading){
-    return <p>Loading...</p>
-  }
   return (
     <div>
-      {src ? <img src={src} alt="Reduced Image" /> : 'Loading...'}
+      {loading ? <p>Loading...</p> :<img src={src} alt="Reduced Image" /> : }
     </div>
   );
 }
