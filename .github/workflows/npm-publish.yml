@@ -31,4 +31,4 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm publish $(ls *.tgz)
         env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+          NODE_AUTH_TOKEN: ${{secrets.PACKAGE_PUBLISH_ACCESS_TOKEN}}
