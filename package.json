@@ -1,15 +1,15 @@
 {
   "name": "imgreducer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A react hook to reduce image size and convert to other format like png, jpeg, webp, avif, bmp;",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "reducer",
+    "image resizer",
     "imgreducer",
-    "resizer"
+    "image optimization"
   ],
   "author": "Shivaraj Umadi",
   "license": "MIT",

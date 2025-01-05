@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 
-export default function useImgReducer(url,imageType='webp',scale = 1) {
+export default function useImgReducer(url,imageType='webp',scale = 1,options) {
   const [src,setSrc] = useState(null);
   const [error,setError] = useState(null);
   const [loading,setLoading] = useState(true);
@@ -9,7 +9,7 @@ export default function useImgReducer(url,imageType='webp',scale = 1) {
     const fetchImage = async ()=>{
       try{
         // Fetch the image as a blob
-        const response = await fetch(url);
+        const response = await fetch(url,options);
         const blob = await response.blob();
     
         // Create an image element
